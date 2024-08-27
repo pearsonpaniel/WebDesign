@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Web Development</title>
+    <style>
+        .roman-numerals {
+            counter-reset: section; /* Create a counter for Roman numerals */
+        }
+        .roman-numerals h2 {
+            counter-increment: section; /* Increment the counter for each h2 */
+            position: relative;
+        }
+        .roman-numerals h2::before {
+            content: counter(section, upper-roman) ". "; /* Display Roman numerals */
+            position: absolute;
+            left: -2em; /* Adjust position as needed */
+            width: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learning Web Development</h1>
+
+    <div class="roman-numerals">
+        <h3>Background Skills</h3>
+        <ol>
+            <li>Background skills</li>
+        </ol>
+        <ul>
+            <li>Unix commands</li>
+            <li>vim Text Editor</li>
+        </ul>
+    
+        <h3>HTML</h2>
+        <ol>
+            <li>Minimal page</li>
+            <li>Headings</li>
+            <li>Tags</li>
+            <li>Lists</li>
+        </ol>
+    
+        <h3>Types of Lists</h3>
+        <ol type="i">
+            <li>Unordered</li>
+            <li>Ordered</li>
+            <li>Definition</li>
+            <li>Nested</li>
+        </ol>
+    
+        <h3>Links</h3>
+        <ol type="i">
+            <li>Absolute</li>
+            <li>Relative</li>
+        </ol>
+    
+        <h3>Images</h3>
+        <p>Learn how to embed and manipulate images.</p>
+    
+        <h3>CSS</h3>
+        <ol>
+            <li>Anatomy</li>
+            <li>Basic selectors</li>
+        </ol>
+    
+        <h3>CSS Selectors</h3>
+        <ol type="i">
+            <li>Element</li>
+            <li>Class</li>
+            <li>ID</li>
+            <li>Group</li>
+        </ol>
+    
+        <h3>The DOM</h3>
+        <p>Understanding the Document Object Model (DOM) and how it interacts with HTML and CSS.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .scratch-card {
+  width: 300px;
+  height: 200px;
+  position: relative;
+}
+
+.scratch-layer {
+  width: 100%;
+  height: 100%;
+  background-color:rosybrown;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.prize-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+</style>
+<body>
+    <div class="scratch-card">
+        <div class="scratch-layer"></div>
+        <div class="prize-layer"> I LOVE YOU</div>
+    </div>
+<script>
+    let scratchCard = document.querySelector('.scratch-card');
+let scratchLayer = document.querySelector('.scratch-layer');
+let prizeLayer = document.querySelector('.prize-layer');
+
+scratchCard.addEventListener('mousedown', (e) => {
+  scratchLayer.style.display = 'none';
+  prizeLayer.style.display = 'block';
+});
+</script>
+</body>
+</html>

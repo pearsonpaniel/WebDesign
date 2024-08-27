@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input
+    {
+        padding:10px;
+        background-color: gold;
+        color:black;
+        margin:10px;
+    }
+    button
+    {
+        padding:12px;
+        background-color: green;
+        color:black;
+        margin:40px;
+
+    }
+    h1
+    {
+        margin-left: 300px;
+    }
+</style>
+<body>
+<div>
+    <input type="number" id="x">
+    <input type="number" id="y">
+</div>
+<div>
+    <button onclick="addvalue()">Addition</button>
+    <button onclick="subvalue()">Subtraction </button>
+    <button onclick="multiplyvalue()">Multiply</button>
+    <button onclick="dividevalue()">Divide</button>
+    <button onclick="modvalue()">Modulus</button>
+</div>
+    <h1 id="demo">Result</h1>
+
+<script>
+    function addvalue()
+    {
+        var x=parseInt(document.getElementById("x").value);
+        var y=parseInt(document.getElementById("y").value);
+        var z=x+y;
+        document.getElementById("demo").innerHTML=z;
+    }
+    function subvalue()
+    {
+        var x=parseInt(document.getElementById("x").value);
+        var y=parseInt(document.getElementById("y").value);
+        var z=x-y;
+        document.getElementById("demo").innerHTML=z;
+    }
+    function multiplyvalue()
+    {
+        var x=parseInt(document.getElementById("x").value);
+        var y=parseInt(document.getElementById("y").value);
+        var z=x*y;
+        document.getElementById("demo").innerHTML=z;
+    }
+    function dividevalue()
+    {
+        var x=parseInt(document.getElementById("x").value);
+        var y=parseInt(document.getElementById("y").value);
+        var z=x/y;
+        document.getElementById("demo").innerHTML=z;
+    }
+    function modvalue()
+    {
+        var x=parseInt(document.getElementById("x").value);
+        var y=parseInt(document.getElementById("y").value);
+        var z=x%y;
+        document.getElementById("demo").innerHTML=z;
+    }
+</script>
+</body>
+</html>

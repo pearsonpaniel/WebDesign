@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container 
+    {
+      width: 260px;
+      padding: 20px;
+      margin-top: 100px;
+      margin-left: 600px;
+      border-radius: 10px;
+      background-color:gold;
+     
+    }
+
+    .display 
+    {
+      width: 90%;
+      height: 40px;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 20px;
+      text-align: right;
+      border: 1px solid #ccc;
+      
+      background-color:aqua;
+      color:white;
+
+    }
+
+    .buttons 
+    {
+      display: grid;
+      gap: 15px;
+      background-color:wheat;
+      color: white;
+    }
+
+    .button 
+    {
+      padding: 20px;
+      font-size: 18px;
+      background-color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover 
+    {
+      background-color: #ddd;
+    }
+
+    .button.equals {
+      grid-column: span 4;
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .button.equals:hover {
+      background-color: greenyellow;
+    }
+
+    .button.clear {
+      background-color:red;
+      color: white;
+    }
+
+    .button.clear:hover {
+      background-color:crimson;
+    }
+
+</style>
+<body>
+<div class="container">
+    <input type="text" id="display" class="display" disabled>
+<div class="buttons">
+    <button class="button" onclick="appendValue('7')">7</button>
+    <button class="button" onclick="appendValue('8')">8</button>
+    <button class="button" onclick="appendValue('9')">9</button>
+    <button class="button clear" onclick="clearDisplay()">C</button>
+    <button class="button" onclick="appendValue('4')">4</button>
+    <button class="button" onclick="appendValue('5')">5</button>
+    <button class="button" onclick="appendValue('6')">6</button>
+    <button class="button" onclick="appendValue('*')">*</button>
+    <button class="button" onclick="appendValue('1')">1</button>
+    <button class="button" onclick="appendValue('2')">2</button>
+    <button class="button" onclick="appendValue('3')">3</button>
+    <button class="button" onclick="appendValue('-')">-</button>
+    <button class="button" onclick="appendValue('0')">0</button>
+    <button class="button" onclick="appendValue('.')">.</button>
+    <button class="button" onclick="appendValue('/')">/</button>
+    <button class="button" onclick="appendValue('+')">+</button>
+    <button class="button equals" onclick="calculate()">=</button>
+</div>
+</div>
+<script>
+     function appendValue(value)
+{
+	
+     switch (operation) 
+    {
+	  case ('add'):
+      Result = x + y;
+	  document.write(`result=${z}`);
+      break;
+		
+    
+	   case ('subtract'):
+		Result = x - y;
+		
+
+	    case ('multiply'):
+		 Result = x * y;
+		 
+
+		case ('divide'):
+		  Result = x / y;
+          
+
+        case ('modulus'):
+		  Result = x %y;
+          
+        
+		
+	}
+    document.getElementById('result').innerHTML='Result:' + Result;
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

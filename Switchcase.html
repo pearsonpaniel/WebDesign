@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var x=parseInt(prompt("Enter x value:"));
+    var y=parseInt(prompt("Enter y value:"));
+    var operator=prompt("Enter operator:");
+    switch(operator)
+    {
+        case("Add"):
+        var z=x+y;
+        document.write(`result=${z}`);
+        break;
+
+        case("sub"):
+        var z=x-y;
+        document.write(`result=${z}`);
+        break;
+
+        case("Multiply"):
+        var z=x*y;
+        document.write(`result=${z}`);
+        break;
+
+        case("Divide"):
+        var z=x/y;
+        document.write(`result=${z}`);
+        break;
+
+        case("Mod"):
+        var z=x%y;
+        document.write(`result=${z}`);
+        break;
+
+        case("sqrt"):
+        var z=Math.sqrt(x*y);
+        document.write(`result=${z}`);
+        break;
+
+        case("exp"):
+        var z=Math.exp(x+y);
+        document.write(`result=${z}`);
+        break;
+
+        case("pow"):
+        var z=Math.pow(x-y);
+        document.write(`result=${z}`);
+        break;
+
+        default:
+            document.write("None of these");
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

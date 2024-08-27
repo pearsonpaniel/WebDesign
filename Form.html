@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(1, 3, 5);
+        color: white;
+    }
+</style>
+<body>
+<h1><center>Form</center></h1>
+<form>
+    <input type="image" img src="Anna.jpg" width="20%" height="20%">
+    <fieldset>
+    <legend><label for="time">Date&Time:</label> <input type="datetime-local" id="time" name="time"></legend>
+    <fieldset>
+    <legend><label for="form">form:</label></legend>   
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+    <label for="number">Age:</label><br>
+    <input type="number"><br>
+    <label for="DOB">DOB:</label><br>
+    <input type="date"><br>
+    <label for="Gender">Gender:</label><br>
+    <input type="checkbox" id="gender" name="male" value="Male"> <label for="Gender">Male</label><br>
+    <input type="checkbox" id="gender" name="female" value="Female"> <label for="Gender">Female</label><br>
+    <label for="username">Username:</label><br>
+    <input list="datalists" name="datalist">
+    <datalist id="datalists">
+    <option value="Pearson">
+    <option value="Paniel">
+    <option value="Pears">
+    <option value="Pearson Paniel">
+    </datalist><br>
+    <label for="Email">Email:</label><br>
+    <input type="text" id="email" name="email"><br> 
+    <label for="password">Password:</label><br>
+    <input type="password"><br>
+    <label for="password">Re-EnterPassword:</label><br>
+    <input type="password"><br>
+    <label for="add">Address:</label><br>
+    <input type="text" id="add" name="add"><br>
+    <label for="city">City:</label><br>
+    <select id="city" name="city">
+        <option value="Chennai">Chennai</option>
+        <option value="Coimbatore">Coimbatore</option>
+        <option value="Thoothukudi">Thoothukudi</option>
+        <option value="Tirunelveli">Tirunelveli</option>
+      </select><br>
+    <label for="state">State:</label><br>
+    <select id="state" name="state" size="4">
+        <option value="mumbai">Mumbai</option>
+        <option value="gujarat">Gujarat</option>
+        <option value="Tamilnadu">Tamilnadu</option>
+        <option value="kerala">kerala</option>
+      </select><br>
+    <label for="pincode">Pincode:</label><br>
+    <input type="text" id="pincode" name="pincode"><br>
+    <label for="phNo">PhoneNumber:</label><br>
+    <input type="tel"><br><br>
+    
+    
+    <input type="reset">  <input type="submit">
+    
+    </fieldset>
+</form>
+</body>
+</html>

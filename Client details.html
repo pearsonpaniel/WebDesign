@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .BG
+    {
+        background-color: green;
+    }
+    .main{
+        margin-left: 350px;
+        position: relative;
+        width: 49%;
+    }
+    .CD {
+        width: 95%;
+        height: 100%;
+        background-color: grey;
+        color: white;
+        bottom: 0px;
+        padding: 10px 5px;
+    }
+
+    .Form {
+        width: 92%;
+        background-color:white;
+        color: black;
+        padding: 10px 15px;
+        margin-top: 0%;
+    }
+
+    span {
+        color: red;
+    }
+    .UDS1
+    {
+        margin-left: 125px;
+    }
+    
+
+    .A {
+        margin-left: 125px;
+        color:grey;
+    }
+    .file{
+        
+    }
+    .submit {
+        background-color: green;
+        border-radius: 10px;
+        margin-left: 200px;
+    }
+
+    input[type=text]{
+          
+          padding: 20px 20px;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom-color:1px solid gray ;
+          outline: none;
+          background-color:white;
+    }
+</style>
+
+<body>
+   <div class="BG">
+   <div class="main">
+    <div class="CD">
+        <center>
+            <h1>Client Details</h1>
+        </center>
+        <center>
+            <p>Enter the details of all incoming clients.</p>
+        </center>
+    </div>
+    <div class="Form">
+        <label for="CN">Client Name <span>*</span><input type="text"></label><br><br><br>
+        <label for="CP">Company <span>*</span><input type="text"></label><br><br><br>
+        <label for="TL">Title<input type="text"></label><br><br><br>
+        <label for="DM">Department <span>*</span><input type="text"></label><br><br><br>
+        <label for="PCM">Preferred contact method <span>*</span> <input type="checkbox" id=PCM name=Email value=Email><label for="Email">Email</label> <input type="checkbox" id=PCM name=phone value=phone><labelfor="phone">Phone</label> </label><br><br><br>
+        <label for="CA">Company address <span>*</span><input type="text"></label>
+        <p class="A">Street Address</p>
+        <span class="UDS1"><input type="text"></span>
+        <p class="A">Address Line 2</p>
+        <span class="UDS1"><input type="text"></span>      
+        <p class="A">City</p>                             
+        <span class="UDS1"><input type="text"></span> 
+        <p class="A">Postal/Zip Code</p>
+        <label for="CW">Company Website <span>*</span><input type="text"></label><br><br><br>
+        <label for="CL">Company Logo <input type="file" class="file"></label><br><br><br>
+        <label for="WH">Working Hours<span>*</span><input type="text"></label><br><br><br>
+        <label for="BC">Billing Cycle <span>*</span> <input type="date"></label><br><br><br>
+        <label for="AI">Additional information<input type="text"></label><br><br><br>
+        <input type="submit" value="submit" class="submit">
+        
+
+    </div>
+
+
+   </div>
+   </div>
+</body>
+
+</html>

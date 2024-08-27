@@ -1,0 +1,14 @@
+* {
+    height:auto;
+    width:auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-decoration-line: underline;
+}
+.body{
+    width:100%;
+    height:100px;
+    background-image:url("C:\Users\pears\Desktop\SCRIPT\kitchen.jpeg");
+    background-position:repeat;
+    background-size:cover;
+       }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .magic-box 
+  {
+  width: 200px;
+  height: 200px;
+  background-color: #ff69b4;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  transition: opacity 0.5s;
+  }
+
+  .magic-box.disappear 
+  {
+  opacity: 0;
+  }
+
+  .magic-box.reappear
+   {
+  opacity: 1;
+   }
+</style>
+<body>
+    <div class="magic-box" id="magic-box">
+        <p> Abracadabra! </p>
+    </div>
+      <button onclick="makeMagic()">Make Magic!</button>
+<script>
+        function makeMagic()
+    {
+      var magicBox = document.getElementById("magic-box");
+      magicBox.classList.add("disappear");
+      setTimeout(function() 
+      {
+      magicBox.classList.remove("disappear");
+      magicBox.classList.add("reappear");
+      }, 1000);
+    }
+      </script>
+      
+</body>
+</html>

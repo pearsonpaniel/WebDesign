@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+    
+</style>
+<body>
+    <h2></h2>
+    <p></p>
+<div class="container">
+    <form >
+      <div class="row">
+      <div class="col-25">
+        <label for="fname">FIRST NAME</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="fname" placeholder="YOUR FIRST NAME">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="lname">LAST NAME</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lname" placeholder="YOUR LAST NAME">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="age">AGE</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="age"  name="age" placeholder="YOUR AGE">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="DOB">DOB</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="DOB" name="DOB" placeholder="YOUR DOB" >
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="gender">GENDER</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="" name="" placeholder="">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+          <label for="uname">USER NAME</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="uname" name="uname" placeholder="YOUR USER NAME">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+          <label for="email">EMAIL ADDRESS</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email"  name="email" placeholder="YOUR EMAIL ADDRESS">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-25">
+          <label for="password">PASSWORD</label>
+        </div>
+        <div class="col-75">
+          <input type="password" id="password" name="password" placeholder="YOUR PASSWORD" >
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="re-enterpassword">RE-ENTER PASSWORD</label>
+          </div>
+          <div class="col-75">
+            <input type="password" id="re-enterpassword" name="re-enterpassword" placeholder="YOUR RE-ENTER PASSWORD" >
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="address">ADDRESS</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="address" name="address" placeholder="YOUR ADDRESS" >
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="city">CITY</label>
+              </div>
+              <div class="col-75">
+                <select id="city" name="city">
+                  <option value="Chennai">Chennai</option>
+                  <option value="Coimbatore">Coimbatore</option>
+                  <option value="Thoothukudi">Thoothukudi</option>
+                  <option value="Tirunelveli">Tirunelveli</option>
+                </select>
+              </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="state">STATE</label>
+                </div>
+                <div class="col-75">
+                  <select id="state" name="state">
+                    <option value="mumbai">Mumbai</option>
+                    <option value="gujarat">Gujarat</option>
+                    <option value="Tamilnadu">Tamilnadu</option>
+                    <option value="kerala">kerala</option>
+                  </select>
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="pincode">PINCODE</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="pincode" name="pincode" placeholder="YOUR PINCODE" >
+                  </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="phno">PHONE NUMBER</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="tel" id="phno" name="phno" placeholder="YOUR PHONE NUMBER" >
+                    </div>
+                    </div>
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+      </form>
+    </div>
+    
+    </body>
+    </html>
+    

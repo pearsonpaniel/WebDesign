@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,th,td
+        {
+          border:1px solid black;  
+        } 
+    .KM
+        {
+           background-color: burlywood;
+        }  
+</style>
+<body>
+    <div class="KM">
+    <table style="width:100%">
+        <tr>
+            <td><h1>Name:</h1></td>
+            <td><input type=text></td>
+        </tr>
+        <tr>
+            <td><h1>Email:</h1></td>
+            <td><input type="email"></td>
+        </tr>
+        <tr>
+            <td><h1>Password:</h1></td>
+            <td><input type="password"></td>
+        </tr>
+        <tr>
+            <td><h1>Approval Required:</h1><br>Click on the button or text to check/uncheck.</td>
+            <td><input type="checkbox" id=CB name=DYA value=DYA><label for="DYA">DO you Approve?</label></td> 
+        </tr> 
+        <tr>
+            <td><h1>Pick Your Favorite:</h1><br>Click on the button or text to Select.</td>
+            <td><input type="radio" id=RD name=PYF value=PYF><label for="PYF">Choice A</label><br><input type="radio" id=RD name=PYF value=PYF><label for="PYF">Choice B</label><br><input type="radio" id=RD name=PYF value=PYF><label for="PYF">Choice C</label></td>
+        </tr>
+        <tr>
+            <td><h1>Popup Menu:</h1></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><h1>List</h1><br>Setup Options:<br><ul><li>Number of rows to display</li><br><li>Allow Multi-Select</li></ul></td> 
+            <td><select id="list" name="list" size="5"><br><option value="CA">California</option><br><option value="CO">Colorado</option><br><option value="CN">Connecticut</option><br><option value="DA">Dalifornia</option><br><option value="DO">Dolorado</option></select></td>
+        </tr>
+        <tr>
+            <td><h1>Field Ignored by KM</h1></td>
+            <td><input type="number"></td>
+        </tr>
+        <tr>
+            <td><h1>Text Area</h1></td>
+            <td></td>
+        </tr>
+
+        
+
+    
+        
+    </div>
+    
+</body>
+</html>
