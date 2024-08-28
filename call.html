@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container 
+        {
+          width: 260px;
+          padding: 20px;
+          margin-top: 100px;
+          margin-left: 600px;
+          border-radius: 10px;
+          background-color:black;
+        }
+    
+        .display 
+        {
+          
+          margin-bottom:10px;
+          padding:10px;
+          font-size:20px;
+          text-align:right;
+          background-color:black;
+          color:white;
+        }
+    
+        .buttons 
+        {
+          display:grid;
+          gap:15px;
+          background-color:black;
+          color:white;
+        }
+    
+        .button 
+        {
+          padding:20px;
+          font-size:18px;
+          color: white;
+         background-color:black ;
+          border:none;
+          border-radius:5px;
+          cursor:pointer;
+          transition:background-color 0.3s;
+        }
+    
+        
+    
+        .buttoncall
+        {
+            grid-column:span 3;
+            background-color: black;
+            
+        }
+    
+        
+    </style>
+    <body>
+       
+        <h1><center>Phone</center></h1>
+        
+        <div class="container">
+        <input type="text" id="display" class="display" disabled>
+        <div class="buttons">
+            <button class="button" onclick="appendValue('1')">1</button>
+            <button class="button" onclick="appendValue('2')">2</button>
+            <button class="button" onclick="appendValue('3')">3</button>
+            <button class="button" onclick="appendValue('4')">4</button>
+            <button class="button" onclick="appendValue('5')">5</button>
+            <button class="button" onclick="appendValue('6')">6</button>
+            <button class="button" onclick="appendValue('7')">7</button>
+            <button class="button" onclick="appendValue('8')">8</button>
+            <button class="button" onclick="appendValue('9')">9</button>
+            <button class="button" onclick="appendValue('*')">*</button>
+            <button class="button" onclick="appendValue('0')">0</button>
+            <button class="button" onclick="appendValue('#')">#</button>
+            <button class="buttoncall" onclick="call()"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                <path fill="#0f0" d="M13,42h22c3.866,0,7-3.134,7-7V13c0-3.866-3.134-7-7-7H13c-3.866,0-7,3.134-7,7v22	C6,38.866,9.134,42,13,42z"></path><path fill="#fff" d="M35.45,31.041l-4.612-3.051c-0.563-0.341-1.267-0.347-1.836-0.017c0,0,0,0-1.978,1.153	c-0.265,0.154-0.52,0.183-0.726,0.145c-0.262-0.048-0.442-0.191-0.454-0.201c-1.087-0.797-2.357-1.852-3.711-3.205	c-1.353-1.353-2.408-2.623-3.205-3.711c-0.009-0.013-0.153-0.193-0.201-0.454c-0.037-0.206-0.009-0.46,0.145-0.726	c1.153-1.978,1.153-1.978,1.153-1.978c0.331-0.569,0.324-1.274-0.017-1.836l-3.051-4.612c-0.378-0.571-1.151-0.722-1.714-0.332	c0,0-1.445,0.989-1.922,1.325c-0.764,0.538-1.01,1.356-1.011,2.496c-0.002,1.604,1.38,6.629,7.201,12.45l0,0l0,0l0,0l0,0	c5.822,5.822,10.846,7.203,12.45,7.201c1.14-0.001,1.958-0.248,2.496-1.011c0.336-0.477,1.325-1.922,1.325-1.922	C36.172,32.192,36.022,31.419,35.45,31.041z"></path>
+                </svg></button>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                    <path fill="#fff" d="M25.8,15.6H14.2c-2,0-3.7,1.7-3.7,3.7v9.5c0,2,1.7,3.7,3.7,3.7h11.6c2,0,3.7-1.7,3.7-3.7v-9.5	C29.5,17.2,27.8,15.6,25.8,15.6z"></path><path fill="#fff" d="M34.9,16.4L31,19.8c-0.2,0.2-0.4,0.5-0.4,0.8v6.7c0,0.3,0.1,0.6,0.4,0.8l3.9,3.5c0.9,0.8,2.4,0.2,2.4-1.1V17.5	C37.3,16.2,35.9,15.5,34.9,16.4z"></path><path fill="#0f0" d="M35,6H13c-3.9,0-7,3.1-7,7v22c0,3.9,3.1,7,7,7h22c3.9,0,7-3.1,7-7V13C42,9.1,38.9,6,35,6z M29,28.5	c0,1.9-1.6,3.5-3.5,3.5h-11c-1.9,0-3.5-1.6-3.5-3.5v-9c0-1.9,1.6-3.5,3.5-3.5h11c1.9,0,3.5,1.6,3.5,3.5V28.5z M37,29.9	c0,1.1-1.3,1.7-2.2,1l-3.5-3.1C31.1,27.6,31,27.3,31,27v-6c0-0.3,0.1-0.6,0.3-0.7l3.5-3.1c0.8-0.7,2.2-0.2,2.2,1V29.9z"></path>
+                    </svg>
+            <button class="buttonclear" onclick="cleardisplay()">x</button>
+
+        </div>
+        </div>
+    <script>
+        function appendValue(value)
+        {
+          document.getElementById('display').value += value;
+        }
+    
+        function cleardisplay() 
+        {
+          document.getElementById('display').value = '';
+        }
+    
+        function call() 
+        {
+          display = document.getElementById('display');
+          display.value= call(display.value);
+        }
+</script>
+</body>
+</html>
