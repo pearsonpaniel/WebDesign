@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+input[type=text], select, textarea
+{
+  width: 100%;
+  padding: 3px;
+  border: 4px solid black;
+  border-radius: 8px;
+}
+
+input[type=text]:hover
+{
+    background-color: white;
+    cursor: pointer;
+}
+label 
+{
+  padding: 12px 12px 12px 12px;
+  display: inline-block;
+}
+
+input[type=submit] 
+{
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: black;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover 
+{
+  background-color: #45a049;
+}
+
+.container 
+{
+  border-radius: 5px;
+  background-color:gold;
+  padding: 20px;
+}
+
+.col-25 
+{
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 
+{
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+<body>
+<div class="container">
+<form>
+    <div class="row">
+    <div class="col-25">
+        <label for="fname">FIRST NAME</label>
+     </div>
+     <div class="col-75">
+        <input type="text" id="fname" name="fname" placeholder="YOUR FIRST NAME">
+     </div>
+     </div>
+     <div class="row">
+     <div class="col-25">
+        <label for="lname">LAST NAME</label>
+     </div>
+     <div class="col-75">
+        <input type="text" id="lname" name="lname" placeholder="YOUR LAST NAME">
+     </div>
+     </div>
+     <div class="row">
+     <div class="col-25">
+        <label for="age">AGE</label>
+     </div>
+     <div class="col-75">
+        <input type="number" id="age"  name="age" placeholder="YOUR AGE">
+     </div>
+     </div>
+     <div class="row">
+     <div class="col-25">
+        <label for="DOB">DOB</label>
+     </div>
+     <div class="col-75">
+        <input type="date" id="DOB" name="DOB" placeholder="YOUR DOB" >
+     </div>
+     </div>
+     <div class="row">
+     <div class="col-25">
+        <label for="gender">GENDER</label>
+     </div>
+     <div class="col-75">
+        <input type="checkbox" id="gender" name="male" value="Male"> <label for="Gender">Male</label> <input
+                type="checkbox" id="gender" name="female" value="Female"> <label for="Gender">Female</label>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+       <label for="uname">USER NAME</label>
+    </div>
+    <div class="col-75">
+       <input type="text" id="uname" name="uname" placeholder="YOUR USER NAME">
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="email">EMAIL ADDRESS</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email"  name="email" placeholder="YOUR EMAIL ADDRESS">
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="password">PASSWORD</label>
+    </div>
+    <div class="col-75">
+      <input type="password" id="password" name="password" placeholder="YOUR PASSWORD" >
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+       <label for="re-enterpassword">RE-ENTER PASSWORD</label>
+    </div>
+    <div class="col-75">
+       <input type="password" id="re-enterpassword" name="re-enterpassword" placeholder="YOUR RE-ENTER PASSWORD" >
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+      <label for="address">ADDRESS</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="address" name="address" placeholder="YOUR ADDRESS" >
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+       <label for="city">CITY</label>
+    </div>
+    <div class="col-75">
+        <select id="city" name="city">
+        <option value="Chennai">Chennai</option>
+        <option value="Coimbatore">Coimbatore</option>
+        <option value="Thoothukudi">Thoothukudi</option>
+        <option value="Tirunelveli">Tirunelveli</option>
+        </select>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+        <label for="state">STATE</label>
+    </div>
+    <div class="col-75">
+      <select id="state" name="state">
+      <option value="mumbai">Mumbai</option>
+      <option value="gujarat">Gujarat</option>
+      <option value="Tamilnadu">Tamilnadu</option>
+      <option value="kerala">kerala</option>
+      </select>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+        <label for="pincode">PINCODE</label>
+    </div>
+    <div class="col-75">
+        <input type="text" id="pincode" name="pincode" placeholder="YOUR PINCODE" >
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+        <label for="phno">PHONE NUMBER</label>
+    </div>
+    <div class="col-75">
+        <input type="tel" id="phno" name="phno" placeholder="YOUR PHONE NUMBER" >
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-25">
+        <label for="sub">SUBJECT</label>
+    </div>
+    <div class="col-75">
+        <input type="text" id="sub" name="sub" placeholder="YOUR SUBJECT" style="width:800px;height:200px">
+    </div>
+    </div>
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+    </div>
+    </body>
+    </html>
+          
+
+
+
+
+
+
+
+
+
+    

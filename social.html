@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
-</head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -16,16 +12,25 @@ body {
   box-sizing: border-box;
 }
 
+.main{
+    width:1500px;
+    height:800px;
+    
+
+}
+
 .container {
   position: relative;
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px 0 30px 0;
+  padding-top: 200px;
+  background-color: gold;
 } 
 
 
 input,
-.button {
+.btn {
   width: 100%;
   padding: 12px;
   border: none;
@@ -39,21 +44,22 @@ input,
 }
 
 input:hover,
-.button:hover {
-  opacity: 1;
+.btn:hover {
+  opacity: 2;
 }
 
-.facebookbutton {
+
+.fb {
   background-color: #3B5998;
   color: white;
 }
 
-.twitterbutton {
+.twitter {
   background-color: #55ACEE;
   color: white;
 }
 
-.googlebutton {
+.google {
   background-color: #dd4b39;
   color: white;
 }
@@ -99,45 +105,30 @@ input[type=submit]:hover {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f1f1f1;
+  background-color: orange;
   border: 1px solid #ccc;
   border-radius: 50%;
   padding: 8px 10px;
 }
 
 
-.hide-md-lg {
-  display: none;
-}
 
 
-.container1 {
+.bottom-container {
   text-align: center;
   background-color: #666;
   border-radius: 0px 0px 4px 4px;
 }
 
 
-@media screen and (max-width: 650px) {
-  .col {
-    width: 100%;
-    margin-top: 0;
-  }
-  
-  .or {
-    display: none;
-  }
-  
-  .hide-md-lg {
-    display: block;
-    text-align: center;
-  }
-}
+
 </style>
 </head>
 <body>
+    <div class="main">
 
-<h1><center>SOCIAL FORM</center></h1>
+<h2><center>SOCIAL FORM</center></h2>
+
 <div class="container">
   <form>
     <div class="row">
@@ -147,20 +138,19 @@ input[type=submit]:hover {
       </div>
 
       <div class="col">
-        <a href="#" class="facebook btn">
-          <i class="fa fa-facebook fa-fw"></i>LOGIN WITH FACEBOOK
-        </a>
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> LOGIN WITH FACEBOOK
+         </a>
         <a href="#" class="twitter btn">
           <i class="fa fa-twitter fa-fw"></i> LOGIN WITH TWITTER
         </a>
-        <a href="#" class="google btn">
-          <i class="fa fa-google fa-fw"></i> LOGIN WITH GOOGLE
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> LOGIN WITH GOOGLE
         </a>
       </div>
-
-      <div class="col">
-        <input type="text" name="username" placeholder="Username">
-        <input type="password" name="password" placeholder="Password">
+     <div class="col">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
         <input type="submit" value="Login">
       </div>
       
@@ -168,21 +158,16 @@ input[type=submit]:hover {
   </form>
 </div>
 
-<div class="container1">
+<div class="bottom-container">
   <div class="row">
     <div class="col">
-      <a href="#" style="color:white" class="button">Sign up</a>
+      <a href="#" style="color:white" class="btn">Sign up</a>
     </div>
     <div class="col">
-      <a href="#" style="color:white" class="button">Forgot password?</a>
+      <a href="#" style="color:white" class="btn">Forgot password?</a>
     </div>
   </div>
 </div>
-
-</body>
-</html>
-
-<body>
-    
+</div>
 </body>
 </html>
